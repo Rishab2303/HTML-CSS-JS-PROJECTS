@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 89.5vh;
     background-image: linear-gradient(to bottom right, red, blue);
 
 
@@ -18,12 +18,14 @@ body {
 
 
 .container {
-    max-width: 18vw;
+    min-width: 285px;
+    width: 285px;
+
     height: auto;
     background-color: rgb(14, 14, 27);
     margin: auto;
-    padding: 0px 0px 0.5rem 0.4rem;
-    /* margin-top: 5rem; */
+    padding: 0.5rem;
+    margin-top: 6rem;
     border-radius: 1rem;
     opacity: 0.9;
 
@@ -51,21 +53,30 @@ body {
 }
 
 .keys {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
     /* justify-content: center;
     align-items: center; */
 
+}
+
+.keys div:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .ke,
 .clear,
 .Delete,
 .equal,
-.multiply {
+.multiply,
+.point {
     padding: 1rem;
     border-radius: 50%;
     background-color: rgb(75, 65, 65);
@@ -98,12 +109,7 @@ body {
     font-weight: 300;
 }
 
-.ke:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
 
-}
 
 input {
     color: black;
